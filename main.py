@@ -51,7 +51,7 @@ def main():
                         body=cleaned)
 
             since_id = dcfc_tweets[0].id
-            dcfc_tweets = api.GetUserTimeline(user_id=DCFC_ACCOUNT['id'], include_rts=True, since_id=since_id)
+        dcfc_tweets = api.GetUserTimeline(user_id=DCFC_ACCOUNT['id'], include_rts=True, since_id=since_id)
         time.sleep(60)
 
 
